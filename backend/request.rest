@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGYWhyaSIsImVtYWlsIjoiZmFoQGdtYWlsLmNvbSIsImlhdCI6MTY2NDM1MTMxOCwiZXhwIjoxNjY0MzUxMzM4fQ.Bab4LXGSUNhe5ZZvrR9BH9Rwci_H2i7XgtQkWJXnL-s
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Fahri",
+    "email" : "fah@gmail.com",
+    "password" : "fahri",
+    "password_confirmation" : "fahri"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "fah@gmail.com",
+    "password" : "fahri"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
